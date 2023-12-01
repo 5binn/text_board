@@ -9,8 +9,8 @@ public class App {
     }
     void run() {
         System.out.println("== 명언 앱 ==");
+        int id = 1;
         while (true) {
-
             System.out.print("명령) ");
             String command = sc.nextLine();
             if (command.equals("종료")) {
@@ -20,7 +20,9 @@ public class App {
                 String content = sc.nextLine().trim();
                 System.out.print("작가 : ");
                 String author = sc.nextLine().trim();
-                System.out.println("1 번 명언이 등록되었습니다.");
+
+                System.out.println(id + "번 명언이 등록되었습니다.");
+                id++;
             }
 
         }
